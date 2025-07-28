@@ -1,13 +1,14 @@
 // src/components/Hero.jsx
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import profilePic from "../assets/Profile.jpg";
 
 const Hero = () => {
   return (
     <section id="home" className=" scroll-mt-24 min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-pink-100 to-purple-100 dark:from-gray-900 dark:to-gray-800 transition-colors duration-500 px-4">
       {/* Profile Image */}
       <img
-        src="src/assets/Profile.jpg"// 🖼️ Replace with your image path
+        src={profilePic}// 🖼️ Replace with your image path
         alt="Profile"
         className="w-40 h-40 md:w-40 md:h-40 rounded-full border-4 border-black dark:border-white shadow-lg mb-6 cursor-pointer transform transition duration-500 hover:scale-110 hover:rotate-1"
       />
